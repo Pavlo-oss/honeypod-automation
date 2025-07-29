@@ -1,5 +1,5 @@
 pipeline {
-  agent ansible
+  agent (label "ubuntu")
   stages {
     stage('Клонування репозиторію') {
       steps {
